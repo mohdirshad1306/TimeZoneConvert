@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0E5791"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/WelcomeTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0E5791"
+        android:fontFamily="sans-serif-condensed"
+        android:text="GTK"
+        android:textAlignment="center"
+        android:textColor="@color/txt_color"
+        android:textSize="12sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/datePicker"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/back"
+
+            android:text="Select Date" />
+
+        <TextView
+            android:id="@+id/SelectedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/teal_200"
+            android:fontFamily="sans-serif"
+            android:text="No date selected"
+
+
+            android:textColor="@color/txt_color"
+
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+        <Spinner
+            android:id="@+id/Hour"
+            android:layout_height="50dp"
+            android:layout_width="95dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+
+            android:background="@drawable/backk"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Spinner
+            android:id="@+id/Minute"
+            android:layout_height="50dp"
+            android:layout_width="95dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backk"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Spinner
+            android:id="@+id/Meridium"
+            android:layout_width="95dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/backk"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+<!--    <Spinner-->
+<!--        android:id="@+id/FromTimeZone"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@color/btn_color"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"/>-->
+    <AutoCompleteTextView
+        android:id="@+id/FromTimeZone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:hint="Enter City to Convert From"
+        android:background="@drawable/back"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+<!--    <Spinner-->
+<!--        android:id="@+id/ToTimeZone"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@color/btn_color"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"/>-->
+    <AutoCompleteTextView
+        android:id="@+id/ToTimeZone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+
+        android:textAlignment="center"
+        android:hint="Enter City to Convert To"
+        android:background="@drawable/back"
+        android:textColor="@color/txt_color"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/back2"
+        android:text="Select both TimeZones"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/txt_color"
+        android:textSize="12pt" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="270dp"
+        android:text="Design By \n siddique Irshad"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="21sp" />
+
+
+</LinearLayout>
